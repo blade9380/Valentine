@@ -1,0 +1,82 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fae7f3;
+  background-image: url("https://media.giphy.com/media/G7MMj69Bg7mrnP1MzA/giphy.gif?cid=790b7611aghsw1wj5r4uym2khioe3avrkgmvkczt2y3kmnmh&ep=v1_stickers_search&rid=giphy.gif&ct=s");
+  height: 100%;
+}
+
+#root {
+  font-family: "Pangolin", cursive;
+  font-weight: 400;
+  font-style: normal;
+  justify-content: center;
+  text-align: center;
+  color: #492e87;
+  font-size: 50px;
+}
+
+#yesButton {
+  background-color: #cbffe7;
+  color: #6aa389;
+  border: none;
+  border-radius: 50px;
+  margin-right: 12px;
+  margin-top: 10px;
+}
+
+#noButton {
+  background-color: #fde9eb;
+  color: #424769;
+  border: none;
+  border-radius: 50px;
+  margin-right: 15px;
+}
+
+.Button {
+  font-family: "Pangolin", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 10px;
+  font-size: 40px;
+  padding: 20px 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  transform-style: preserve-3d;
+}
+
+#yesButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  box-shadow: 0 0 0 1px #7eb59c, 0 0.2em 0 0 #cbffe7;
+  transform: translate3d(0, 0.007em, -1em);
+}
+#noButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  box-shadow: 0 0 0 1px #daa9a7, 0 0.2em 0 0 #feb9b9;
+  transform: translate3d(0, 0.007em, -1em);
+}
+.Button:active {
+  transform: scale(0.96);
+}
+
+.Button:hover {
+  transform: translate(0, 0.25em);
+}
